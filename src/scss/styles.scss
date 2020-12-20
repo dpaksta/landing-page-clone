@@ -1,0 +1,198 @@
+
+@import './_breakpoint.scss';
+
+
+
+// SMOOTH SCROLLING start
+// also add id in href property of <a> tag inside toolbox.js and sidedrawer.js 
+// html{
+//   overflow: hidden;
+//   }
+  
+//   #pageContainerID{
+//     height: 85vh;
+//     overflow-y: scroll;
+//     scroll-behavior: smooth;
+  
+//   }
+
+// SMOOTH SCROLLING end 
+
+// reset css start
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+// reset css end
+
+
+
+
+// Universal relational font size for all rem values
+:root{
+  font-size: 10px;
+}
+
+
+
+// @import './_animations';
+@import './_global';
+@import './_responsive_mixin';
+@import './_colors';
+
+// @import './_fonts';
+// @import './_typography';
+
+
+
+
+
+
+
+// -------------------------including RESPONSIVE MIXINS
+// .cls {
+//     width: 800px;
+//     height: 500px;
+//     background: $primary_green;
+
+//     @include responsive_mobile() {
+//         width: 300;
+//         height: 200px;
+//     }
+
+//     @include responsive_tab() {
+//         width: 300;
+//         height: 200px;
+//     }
+
+//     @include responsive(350px, 1200px) {
+//         width: 3110;
+//         height: 200px;
+//     }
+// }
+
+// -------------------------including RESPONSIVE MIXINS end
+
+
+
+
+
+body{
+  
+  
+
+//     // between 0px to phone-px 
+//     @include  media('<=phone'){
+//       background-color: $primary_green;
+//   }
+  
+  
+//   // greater than phone less than 425
+//   @include  media('>=phone', '<=425px'){
+//   background-color: $primary_bg;
+//   }
+//   // greater than tablet less than desktop
+//   @include  media('>=tablet', '<=desktop'){
+//   background-color: pink;
+//   }
+  }
+
+
+//   =====================================================================================================================
+// only logo is absolute .Navigation hammburger etc of toolbar dont have any position property
+$navBarHeight:100%;
+$logoVerticalMargin: 112px;
+$ShiftNavDownAlongWithBdy:112px;
+$NavBackgroundColor: transparent;
+$navLiColor:black;
+$hamburgerBgColor:black;
+$moveHamburgerVerticle:0px;
+$logoHeight:35px;
+
+.logoClsDiv {
+  position: absolute;
+  top: $logoVerticalMargin;
+  left: 115px;
+}
+
+.logoClsDiv img {
+  height: $logoHeight;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 990px) {
+  .toolbar_navigation-items a {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 990px) {
+  .logoClsDiv {
+    position: absolute;
+    top:  $logoVerticalMargin;
+    left: 115px;
+  }
+}
+
+.toggle-button{
+  margin-top:$moveHamburgerVerticle;
+}
+
+
+
+
+.toolbar__navigation {
+  background: $NavBackgroundColor;
+}
+/* nav right section  */
+.toolbar_navigation-items {
+  background-color: $NavBackgroundColor;
+}
+
+
+.ShiftNavDownAlongWithBdy{
+  margin-top: $ShiftNavDownAlongWithBdy;
+  }
+
+
+  
+.toolbar__navigation {
+  height: $navBarHeight;
+}
+
+
+.toggle-button__line{
+background:$hamburgerBgColor;
+}
+
+
+.toolbar_navigation-items a {
+  color: $navLiColor;
+}
+
+
+
+
+
+
+
+
+// ========================================================CSS FOR HOME PAGE=================================
+
+
+
+
+
+
+// ==================================== Site starts here
+
+
+#heroSection{
+  background-image: url(../pages/img/heroSection-bg.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+

@@ -1,0 +1,27 @@
+
+// mobile
+@mixin responsive_mobile() {
+
+    @media only screen and (max-width:600px){
+        @content;
+    }
+    
+}
+//tablet
+@mixin responsive_tab() {
+
+    @media only screen and (max-width:900px){
+        @content;
+    }
+    
+}
+
+// variables
+
+@mixin responsive($minWidth,$maxWidth) {
+
+    @media only screen and (min-width:$minWidth) and (max-width:$maxWidth){
+        @content;
+    }
+    
+}

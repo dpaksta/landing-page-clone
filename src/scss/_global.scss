@@ -1,0 +1,37 @@
+// -------------------------USING mixins with FLEX start
+
+@mixin flex {
+    display: flex;
+
+
+}
+
+
+@mixin flexH {
+    @include flex;
+    justify-content: center;
+
+}
+
+@mixin flexV {
+    @include flex;
+
+
+    align-items: center;
+
+
+
+}
+
+@mixin flexVH {
+    @include flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+// -------------------------USING mixins with FLEX end

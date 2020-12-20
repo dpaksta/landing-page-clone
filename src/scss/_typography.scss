@@ -1,0 +1,27 @@
+// Lato Regular
+
+.lato_regular_base{
+    font-family: 'Lato_Lighty';
+    color: black;
+    font-weight: 400;
+}
+.regular_10{
+    @extend .lato_regular_base;
+    font-size: 10px;
+}
+.regular_11{
+    @extend .lato_regular_base;
+    font-size: 11px;
+}
+.regular_12{
+    @extend .lato_regular_base;
+    font-size: 12px;
+}
+.regular_13{
+    @extend .lato_regular_base;
+    font-size: 13px;
+}
+.regular_14{
+    @extend .lato_regular_base;
+    font-size: 14px;
+}
